@@ -134,7 +134,7 @@ export default function MarketFloorPage() {
                                 <div
                                   key={storeIdx}
                                   onClick={() => navigate(`/market/${marketId}/store/${encodeURIComponent(store.name)}`)}
-                                  className="flex items-center justify-between bg-gray-50 border border-gray-200/80 rounded-xl px-3.5 py-3 cursor-pointer hover:bg-gray-100 transition-colors shadow-sm gap-2"
+                                  className="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-xl px-3.5 py-3 cursor-pointer hover:bg-gray-200 transition-colors shadow-sm gap-2"
                                 >
                                   <div className="flex-1 min-w-0">
                                     <span className="text-[11px] font-black text-gray-800 block truncate">{store.name}</span>
