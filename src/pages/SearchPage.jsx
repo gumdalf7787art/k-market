@@ -72,6 +72,11 @@ export default function SearchPage() {
               placeholder="찾으시는 점포 이름을 입력하세요"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.target.blur();
+                }
+              }}
               autoFocus
             />
           </div>
