@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1D4ED8;
+}
+
+@layer base {
+  html {
+    font-size: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      /* PC 화면에서 현재 75% 기준 10% 추가 축소 (75 * 0.9 = 67.5%) */
+      font-size: 67.5%; 
+    }
+  }
+
+  body {
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-900);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+  }
+}
