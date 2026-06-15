@@ -90,9 +90,9 @@ export default function MarketFloorPage() {
                 const storeCount = floor.categories.reduce((sum, cat) => sum + cat.stores.length, 0);
 
                 return (
-                  <div key={floor.id} className={`rounded-2xl shadow-sm border overflow-hidden transition-colors ${isOpen ? 'bg-gray-100 border-gray-300' : 'bg-white border-gray-100'}`}>
+                  <div key={floor.id} className={`rounded-2xl shadow-sm border overflow-hidden transition-colors ${isOpen ? 'bg-white border-gray-300' : 'bg-white border-gray-100'}`}>
                     {/* 층 헤더 */}
-                    <div className={`w-full px-4 py-4 flex items-center gap-3 ${isOpen ? 'bg-gray-100' : ''}`}>
+                    <div className="w-full px-4 py-4 flex items-center gap-3 bg-white">
                       <button
                         onClick={() => toggleFloor(floor.id)}
                         className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-black text-lg flex-none shadow-sm"
@@ -122,7 +122,7 @@ export default function MarketFloorPage() {
 
                     {/* 업체 목록 */}
                     {isOpen && (
-                      <div className="border-t border-gray-100 px-4 pb-4">
+                      <div className="border-t border-gray-100 px-4 pb-4 bg-white">
                         {floor.categories.map((category, catIdx) => (
                           <div key={catIdx} className="mt-4">
                             <div className="flex items-center gap-2 mb-2.5">
@@ -134,7 +134,7 @@ export default function MarketFloorPage() {
                                 <div
                                   key={storeIdx}
                                   onClick={() => navigate(`/market/${marketId}/store/${encodeURIComponent(store.name)}`)}
-                                  className="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-xl px-3.5 py-3 cursor-pointer hover:bg-gray-200 transition-colors shadow-sm gap-2"
+                                  className="flex items-center justify-between bg-gray-50 border border-gray-200/80 rounded-xl px-3.5 py-3 cursor-pointer hover:bg-gray-100 transition-colors shadow-sm gap-2"
                                 >
                                   <div className="flex-1 min-w-0">
                                     <span className="text-[11px] font-black text-gray-800 block truncate">{store.name}</span>
