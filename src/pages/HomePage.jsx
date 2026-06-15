@@ -84,7 +84,7 @@ export default function HomePage() {
               <p className="text-gray-400 text-sm mt-2 font-medium">동대문구 9개 전통시장의 생생한 정보를 한눈에 확인하세요</p>
             </div>
             
-            <div className="grid grid-cols-3 grid-rows-3 md:grid-rows-none md:grid-cols-3 lg:grid-cols-3 gap-x-1.5 gap-y-2 md:gap-8 lg:gap-10 flex-1 h-full">
+            <div className="grid grid-cols-3 grid-rows-3 md:grid-rows-none md:grid-cols-3 lg:grid-cols-3 gap-x-2.5 gap-y-2 md:gap-8 lg:gap-10 flex-1 h-full">
               {markets.map(market => (
                 <MarketCard key={market.id} market={market} />
               ))}
