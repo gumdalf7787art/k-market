@@ -15,7 +15,7 @@ export default function MainLayout() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen w-full md:bg-gray-100 bg-gray-50">
+    <div className="flex flex-col min-h-screen w-full md:bg-gray-100 bg-gray-100">
       
       {/* 1. PC버전 데스크톱 상단 헤더 (md 이상 해상도에서 노출) */}
       <header className="hidden md:flex bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm flex-none">
@@ -58,7 +58,7 @@ export default function MainLayout() {
       </header>
 
       {/* 2. 메인 앱 영역 (모바일: max-w-md 중앙정렬 폰 에뮬레이터, PC: 화면 전체 풀사이즈 웹 레이아웃) */}
-      <div className="flex-1 flex flex-col w-full mx-auto max-w-md bg-gray-50 h-[100dvh] shadow-xl relative overflow-hidden md:max-w-none md:bg-transparent md:h-auto md:shadow-none md:overflow-visible">
+      <div className="flex-1 flex flex-col w-full mx-auto max-w-md bg-gray-100 h-[100dvh] shadow-xl relative overflow-hidden md:max-w-none md:bg-transparent md:h-auto md:shadow-none md:overflow-visible">
         {/* 콘텐츠 영역 */}
         <main className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden md:overflow-visible relative flex flex-col pb-[70px] md:pb-0">
           <Outlet />

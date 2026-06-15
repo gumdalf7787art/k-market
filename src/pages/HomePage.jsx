@@ -7,7 +7,7 @@ import { markets } from '../data/markets';
 export default function HomePage() {
   const [isMapModalOpen, setIsMapModalOpen] = useState(false);
   return (
-    <div className="bg-gray-50 md:bg-white flex-1 flex flex-col relative overflow-hidden md:overflow-visible">
+    <div className="bg-gray-100 md:bg-white flex-1 flex flex-col relative overflow-hidden md:overflow-visible">
       
       {/* 1. 상단 전체 배경 이미지 (가로 비율에 맞춰 최적화 크롭된 hero-desktop.webp 적용 및 이미지를 50px 아래로 이동하기 위해 object-[right_61%] 적용) */}
       <div className="absolute top-0 left-0 right-0 z-0 h-[180px] md:h-[320px] overflow-hidden">
