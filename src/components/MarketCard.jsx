@@ -63,7 +63,7 @@ export default function MarketCard({ market }) {
         {/* 하단 텍스트 및 버튼 영역 (PC버전 패딩 확대) */}
         <div className="p-1.5 pt-1 md:p-3 md:pt-4 flex-none flex flex-col">
           {/* 4. 설명 텍스트 (PC버전 글자 확대) */}
-          <div className="px-0.5 text-center mt-0.5 mb-1.5 md:mb-3">
+          <div className="px-0.5 text-center mt-0.5 mb-0 md:mb-3">
             <p className="text-[7.5px] md:text-[11.5px] text-gray-500 font-bold leading-tight md:leading-normal break-keep">
               {market.description.split('\n')[0]}
               <br />
@@ -71,8 +71,8 @@ export default function MarketCard({ market }) {
             </p>
           </div>
 
-          {/* 5. 지도 보기 버튼 (PC버전 크기 및 라운딩 스케일업) */}
-          <button className="w-full py-1 md:py-2 rounded-[3px] md:rounded-[6px] border flex items-center justify-center gap-0.5 md:gap-1.5 transition-colors hover:bg-gray-200 bg-gray-100 border-gray-200 mt-auto flex-none">
+          {/* 5. 지도 보기 버튼 (PC버전 크기 및 라운딩 스케일업, 모바일은 숨김) */}
+          <button className="hidden md:flex w-full py-1 md:py-2 rounded-[3px] md:rounded-[6px] border items-center justify-center gap-0.5 md:gap-1.5 transition-colors hover:bg-gray-200 bg-gray-100 border-gray-200 mt-auto flex-none">
             <span className="text-[8px] md:text-[11.5px] font-black" style={{ color: hexColor }}>지도 보기</span>
             <MapPin size={9} className="md:w-3.5 md:h-3.5" strokeWidth={3} style={{ color: hexColor }} />
           </button>
