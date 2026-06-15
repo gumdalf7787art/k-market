@@ -99,8 +99,18 @@ export default function MarketDetailPage() {
           {/* 헤더 콘텐츠 (타이틀, 버튼 등) */}
           <div className="absolute inset-x-0 top-0 px-4 pt-5 flex flex-col items-center text-white z-20 md:top-auto md:bottom-0 md:px-10 md:pb-16 md:items-start">
             
-            {/* 상단 컨트롤 바 (PC에서는 즐겨찾기 버튼의 위치/크기 조정) */}
-            <div className="w-full flex justify-end items-center mb-1 md:absolute md:top-8 md:left-8 md:w-[calc(100%-64px)]">
+            {/* 상단 컨트롤 바 */}
+            <div className="w-full flex justify-between items-center mb-1 md:absolute md:top-8 md:left-8 md:w-[calc(100%-64px)]">
+              {/* 뒤로가기 버튼 */}
+              <button 
+                onClick={() => navigate('/')}
+                className="p-1 md:p-3 md:bg-black/20 md:backdrop-blur-md rounded-full active:bg-white/20 hover:bg-black/40 transition-colors"
+              >
+                <ArrowLeft 
+                  size={22} 
+                  className="stroke-[2.5] text-white md:w-6 md:h-6" 
+                />
+              </button>
               {/* 즐겨찾기 버튼 */}
               <button 
                 onClick={handleFavoriteToggle}
