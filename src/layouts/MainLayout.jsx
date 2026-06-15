@@ -74,14 +74,14 @@ export default function MainLayout() {
               
               if (item.isCenter) {
                 return (
-                  <div key={item.path} className="relative -top-6 flex flex-col items-center">
+                  <div key={item.path} className="flex flex-col items-center justify-center w-14">
                     <Link
                       to={item.path}
-                      className="flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full shadow-lg text-white mb-0.5 border-4 border-gray-50"
+                      className="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full shadow-sm text-white mb-0.5"
                     >
-                      <ScanLine size={28} strokeWidth={3} />
+                      <ScanLine size={20} strokeWidth={2.5} />
                     </Link>
-                    <span className="text-[11px] text-gray-900 font-black">{item.label}</span>
+                    <span className="text-[11px] text-blue-600 font-black">{item.label}</span>
                   </div>
                 );
               }
