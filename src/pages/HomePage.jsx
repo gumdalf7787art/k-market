@@ -71,7 +71,7 @@ export default function HomePage() {
         
         {/* PC용 미세 그라데이션 배경 래퍼 */}
         <div className="md:bg-gradient-to-b md:from-white md:via-slate-50/80 md:to-slate-100/60 flex-1 flex flex-col">
-          <div className="flex-1 w-[85%] mx-auto pt-1.5 pb-2 md:max-w-7xl md:w-full md:px-8 md:pt-10 md:pb-16 flex flex-col">
+          <div className="flex-1 w-[92%] mx-auto pt-1.5 pb-2 md:max-w-7xl md:w-full md:px-8 md:pt-10 md:pb-16 flex flex-col">
             
             {/* PC용 섹션 타이틀 - 장식선과 서브텍스트 추가 */}
             <div className="hidden md:flex flex-col items-center mb-10">

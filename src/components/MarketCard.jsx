@@ -20,13 +20,13 @@ export default function MarketCard({ market }) {
     const parts = name.split('\n');
     if (parts.length > 1) {
       return (
-        <span className="flex flex-col items-center justify-center leading-none">
-          <span className="text-[13px] md:text-[18px] font-black">{parts[0]}</span>
-          <span className="text-[10px] md:text-[13px] font-bold opacity-85 mt-0.5">{parts[1]}</span>
+        <span className="flex flex-col items-center justify-center leading-none px-0.5 w-full overflow-hidden">
+          <span className="text-[12.5px] md:text-[18px] font-black tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis w-full">{parts[0]}</span>
+          <span className="text-[9.5px] md:text-[13px] font-bold opacity-85 mt-0.5 tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis w-full">{parts[1]}</span>
         </span>
       );
     }
-    return <span className="text-[13px] md:text-[18px] font-black block">{name}</span>;
+    return <span className="text-[12.5px] md:text-[18px] font-black block tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis px-0.5 w-full">{name}</span>;
   };
 
   return (
@@ -44,8 +44,8 @@ export default function MarketCard({ market }) {
           </span>
         </div>
 
-        {/* 2. 이름표 배지 (가로폭 w-[90%] md:w-[85%]) */}
-        <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 z-20 w-[90%] md:w-[85%]">
+        {/* 2. 이름표 배지 (가로폭 w-[96%] md:w-[85%]) */}
+        <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 z-20 w-[96%] md:w-[85%]">
           <div className={`py-1 md:py-1.5 rounded-[3px] md:rounded-[6px] text-center text-white shadow-sm leading-tight ${market.color}`}>
             {renderMarketName(market.name)}
           </div>
